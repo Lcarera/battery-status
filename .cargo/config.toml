@@ -1,0 +1,7 @@
+# Keep build output out of OneDrive.
+[build]
+target-dir = "C:/Users/lcare/AppData/Local/cargo-target/battery-status"
+
+# Link the C runtime into the exe, so it runs on a PC with no Visual C++ Redistributable.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]

@@ -1,0 +1,17 @@
+[package]
+name = "battery-status"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+log = "0.4.35"
+notify = "9.0.0"
+serde = { version = "1.0.229", features = ["derive"] }
+simplelog = "0.12.2"
+toml = "1.2.2"
+windows = { version = "0.62.2", features = ["Devices_Enumeration", "Foundation", "Foundation_Collections", "Data_Xml_Dom", "UI_Notifications", "Win32_Foundation", "Win32_UI_Shell", "Win32_UI_WindowsAndMessaging", "Win32_Graphics_Gdi", "Win32_System_Threading", "Win32_System_Registry", "Win32_System_LibraryLoader", "Win32_System_Power", "Win32_Security"] }
+windows-collections = "0.3.2"
+windows-future = "0.3.2"
+
+[dev-dependencies]
+tempfile = "3.27.0"
